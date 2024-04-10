@@ -1,0 +1,1 @@
+pip install fastapi numpy joblib uvicorn lightgbm scikit-learn 
