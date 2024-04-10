@@ -2,5 +2,5 @@ fastapi==0.110.1
 numpy==1.22.4
 joblib
 uvicorn==0.29.0
-lightgbm==2.0.3
+lightgbm
 scikit-learn==1.4.2
