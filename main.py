@@ -6,9 +6,7 @@ import numpy as np
 
 app = FastAPI()
 
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
+
 
 model = joblib.load("model.pkl")
 
@@ -17,7 +15,7 @@ class InputData(BaseModel):
     P: float
     K: float
 
-@app.post("/recommend/")
+@app.post("/")
 async def recommend_crop(data: InputData):
     try:
         # Extract features from request body
